@@ -1,0 +1,106 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    transition: .2s linear;
+
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-color: var(--dark_color);
+    --swiper-navigation-size: 24px;
+    --swiper-navigation-sides-offset: -48px;
+
+
+    .icon
+    {
+        display: block;
+
+        width: 24px;
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+    }
+
+
+    @media (hover: hover) and (pointer: fine)
+    {
+        &:hover
+        {
+            --swiper-navigation-color: var(--primary_color);
+        }
+    }
+}
+
+
+.swiper-button-next
+{
+    .icon
+    {
+        transform: rotate(180deg);
+    }
+}
+
+
+.swiper-pagination
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--inner_gap_s);
+
+    pointer-events: none;
+
+    --swiper-pagination-bottom: 0;
+    --swiper-pagination-bullet-inactive-color: var(--grey_color);
+    --swiper-pagination-bullet-hover-color: var(--secondary_color);
+    --swiper-pagination-bullet-active-color: var(--primary_color);
+
+
+    .swiper-pagination-bullet
+    {
+        transition: background .2s linear;
+        pointer-events: auto;
+
+        --swiper-pagination-bullet-height: 8px;
+        --swiper-pagination-bullet-width: 8px;
+        --swiper-pagination-bullet-inactive-opacity: 1;
+        --swiper-pagination-bullet-border-radius: 50%;
+
+
+        &:hover
+        {
+            background: var(--swiper-pagination-bullet-hover-color);
+        }
+
+        &.active
+        {
+            background: var(--swiper-pagination-bullet-active-color);
+        }
+    }
+}
+
+
+
+.swiper-scrollbar
+{
+    margin-top: var(--block_padding_l);
+
+    --swiper-scrollbar-bg-color: #252525;
+    --swiper-scrollbar-drag-bg-color: #ababa9;
+    --swiper-scrollbar-border-radius: 4px;
+    --swiper-scrollbar-top: 0;
+    --swiper-scrollbar-bottom: 0;
+    --swiper-scrollbar-sides-offset: 0;
+    --swiper-scrollbar-size: 4px;
+
+
+    &.swiper-scrollbar-horizontal,
+    .swiper-horizontal > &
+    {
+        position: relative;
+
+        width: 1200px;
+        max-width: 100%;
+        margin-inline: auto;
+    }
+}

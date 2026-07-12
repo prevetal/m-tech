@@ -1,0 +1,708 @@
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 360px;
+        --font_size_title_xl: 64px;
+        --font_size_title_l: 48px;
+        --font_size_title: 40px;
+        --font_size_title_s: 30px;
+        --font_size_title_xs: 24px;
+        --font_size_title_xxs: 20px;
+        --block_head_offset: 32px;
+        --outside_gap: 100px;
+        --outside_gap_s: 80px;
+        --outside_gap_xs: 60px;
+        --block_padding_l: 48px;
+        --block_padding: 32px;
+        --block_padding_s: 24px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-top: var(--cont_padding);
+
+
+        .menu
+        {
+            gap: var(--inner_gap_l);
+        }
+
+
+        .btns
+        {
+            .btn
+            {
+                min-width: 56px;
+                height: 56px;
+
+
+                &.discuss_btn
+                {
+                    min-width: 224px;
+                }
+            }
+        }
+    }
+
+
+
+    /*-----------------
+        Breadcrumbs
+    -----------------*/
+    .breadcrumbs
+    {
+        gap: var(--inner_gap_xxs) var(--inner_gap);
+
+        font-size: var(--font_size_s);
+
+
+        .sep
+        {
+            width: 10px;
+            height: 12px;
+        }
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        &.s_w
+        {
+            width: 760px;
+        }
+
+
+        h3
+        {
+            font-size: var(--font_size_title);
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-top: -122px;
+        padding-bottom: 0;
+
+
+        .data
+        {
+            min-height: 650px;
+            padding-block: 170px var(--block_padding);
+
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+
+        .title
+        {
+            width: 520px;
+        }
+
+
+        .advantages
+        {
+            .grid_row
+            {
+                --gap_x: var(--block_padding);
+                --gap_y: var(--inner_gap_l);
+            }
+
+
+            .item
+            {
+                gap: var(--inner_gap_s);
+
+
+                .name
+                {
+                    font-size: var(--font_size_title_xxs);
+
+
+                    .icon
+                    {
+                        width: 52px;
+                    }
+
+
+                    span
+                    {
+                        width: calc(100% - 52px - var(--inner_gap));
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Production
+    ----------------*/
+    .production
+    {
+        .block_head
+        {
+            width: 772px;
+            margin-bottom: -100px;
+        }
+
+
+        .data
+        {
+            .point
+            {
+                span
+                {
+                    width: 60px;
+                }
+            }
+
+
+            .point_info
+            {
+                width: 400px;
+            }
+        }
+
+
+        .advantages
+        {
+            margin-top: -68px;
+
+
+            .grid_row
+            {
+                --gap_x: 40px;
+                --gap_y: 40px;
+
+
+                &:before
+                {
+                    margin-right: calc(var(--gap_x) * -.5);
+                }
+            }
+
+
+            .item
+            {
+                gap: var(--inner_gap);
+
+
+                .name
+                {
+                    .line
+                    {
+                        margin-right: calc(var(--gap_x) * -.5);
+                    }
+                }
+
+
+                .desc
+                {
+                    font-size: var(--font_size);
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog
+    {
+        .category
+        {
+            min-height: 520px;
+            padding-block: var(--inner_gap_l);
+            padding-inline: var(--inner_gap_l);
+
+
+            .data
+            {
+                width: 600px;
+            }
+
+
+            .desc
+            {
+                width: calc(100% - 268px - var(--block_padding));
+
+                font-size: var(--font_size);
+            }
+
+
+            .items
+            {
+                padding-top: var(--inner_gap);
+            }
+
+
+            .btns
+            {
+                gap: var(--inner_gap_xxs);
+
+
+                .btn
+                {
+                    min-width: 56px;
+                    height: 56px;
+                    padding-inline: var(--inner_gap_xs);
+
+
+                    &.details_btn
+                    {
+                        min-width: 320px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block
+    {
+        .data
+        {
+            width: calc(50% - var(--cont_padding_half));
+
+
+            .btns
+            {
+                .btn
+                {
+                    min-width: 56px;
+                    height: 56px;
+                    padding-inline: var(--inner_gap_xs);
+
+
+                    &.details_btn
+                    {
+                        width: calc(100% - 56px - var(--inner_gap_xxs));
+                    }
+                }
+            }
+        }
+
+
+        .list
+        {
+            width: calc(50% - var(--cont_padding_half));
+        }
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        .data
+        {
+            width: 1000px;
+
+
+            .item
+            {
+                gap: var(--inner_gap_xs);
+
+                padding-bottom: var(--inner_gap_l);
+            }
+        }
+
+
+        .map
+        {
+            height: 440px;
+        }
+
+
+        .legal_info
+        {
+            .items
+            {
+                width: 760px;
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Video present
+    -------------------*/
+    .video_present
+    {
+        video
+        {
+            height: 440px;
+        }
+    }
+
+
+
+    /*-------------------
+        Category head
+    -------------------*/
+    .category_head
+    {
+        margin-top: -122px;
+
+
+        .data
+        {
+            padding-block: 146px 80px;
+
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+
+        .desc
+        {
+            width: 440px;
+            margin-top: var(--inner_gap_l);
+
+            font-size: var(--font_size);
+        }
+
+
+        .image
+        {
+            width: 760px;
+        }
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories
+    {
+        .category
+        {
+            .name
+            {
+                font-size: var(--font_size_title_s);
+            }
+
+
+            .desc
+            {
+                font-size: var(--font_size_s);
+            }
+
+
+            .price
+            {
+                .exp
+                {
+                    margin-bottom: 0;
+
+                    font-size: var(--font_size_xs);
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery
+    {
+        .caption
+        {
+            width: 500px;
+
+            font-size: var(--font_size_s);
+        }
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents
+    {
+        .file
+        {
+            font-size: var(--font_size_s);
+        }
+    }
+
+
+
+    /*-----------------
+        How we work
+    -----------------*/
+    .how_we_work
+    {
+        .item
+        {
+            min-height: 500px;
+
+
+            .items
+            {
+                width: calc(100% - 320px - var(--block_padding));
+
+                font-size: var(--font_size_s);
+            }
+
+
+            .desc
+            {
+                width: 320px;
+
+                font-size: var(--font_size_s);
+            }
+
+
+            .requisites
+            {
+                width: 320px;
+                min-height: 100px;
+            }
+
+
+            .image1
+            {
+                left: 40px;
+
+                width: 480px;
+            }
+
+
+            .image2
+            {
+                width: 440px;
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Logos
+    -----------*/
+    .logos
+    {
+        .image
+        {
+            height: 180px;
+        }
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head
+    {
+        margin-top: -122px;
+
+
+        &:before
+        {
+            bottom: -428px;
+        }
+
+
+        .data
+        {
+            padding-block: 146px var(--outside_gap_xs);
+
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+
+
+            .cont
+            {
+                min-height: 500px;
+            }
+        }
+
+
+        .title
+        {
+            width: 600px;
+
+            font-size: var(--font_size_title);
+        }
+
+
+        .image
+        {
+            width: 700px;
+        }
+
+
+        .desc
+        {
+            width: 800px;
+
+            font-size: var(--font_size_title_xxs);
+        }
+
+
+        .bg
+        {
+            bottom: -80px;
+
+
+            img
+            {
+                width: 820px;
+                height: 919px;
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats
+    {
+        &.top_pad
+        {
+            padding-top: var(--cont_padding_double);
+        }
+
+
+        .item
+        {
+            min-height: 240px;
+
+
+            .val
+            {
+                font-size: 88px;
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Boss quote
+    ----------------*/
+    .boss_quote
+    {
+        .data
+        {
+            width: 600px;
+            margin-left: var(--block_padding_l);
+
+
+            .text
+            {
+                font-size: var(--font_size_title_xs);
+            }
+        }
+
+
+        .image
+        {
+            width: 500px;
+        }
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        .email
+        {
+            font-size: 100px;
+        }
+
+
+        .bottom
+        {
+            padding-block: var(--inner_gap) ;
+        }
+
+
+        .data
+        {
+            .title
+            {
+                margin-bottom: var(--inner_gap);
+            }
+        }
+
+
+        .logo
+        {
+            gap: var(--inner_gap);
+
+
+            img
+            {
+                width: 258px;
+                height: 56px;
+            }
+        }
+
+
+        .links
+        {
+            .items
+            {
+                &.big
+                {
+                    font-size: var(--font_size);
+                }
+            }
+        }
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        .inner
+        {
+            width: 380px;
+        }
+    }
+}

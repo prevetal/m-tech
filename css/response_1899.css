@@ -1,0 +1,1082 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --sidebar_width: 400px;
+        --font_size_title_xl: 72px;
+        --font_size_title_l: 56px;
+        --font_size_title: 48px;
+        --font_size_title_s: 32px;
+        --font_size_title_xs: 24px;
+        --font_size_title_xxs: 20px;
+        --outside_gap: 120px;
+        --outside_gap_s: 100px;
+        --block_padding_s: 28px;
+    }
+
+
+
+    .content_row,
+    .content_row > .cont.row
+    {
+        .content
+        {
+            width: calc(100% - var(--sidebar_width) - var(--block_padding_l));
+        }
+    }
+
+
+    .swiper-button-next,
+    .swiper-button-prev
+    {
+        --swiper-navigation-sides-offset: -24px;
+    }
+
+
+    .swiper-scrollbar
+    {
+        margin-top: var(--block_padding);
+
+
+        &.swiper-scrollbar-horizontal,
+        .swiper-horizontal > &
+        {
+            width: 1024px;
+        }
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion
+    {
+        gap: var(--inner_gap_xxxs);
+    }
+
+
+    .accordion_item
+    {
+        .head
+        {
+            padding: var(--inner_gap_l);
+
+
+            .label
+            {
+                width: calc(100% - 48px);
+
+                font-size: var(--font_size_title_xxs);
+            }
+        }
+
+
+        .hidden
+        {
+            padding-block: 0 var(--inner_gap_l);
+            padding-inline: var(--inner_gap_l);
+        }
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding-top: var(--block_padding);
+
+
+        .menu
+        {
+            gap: var(--block_padding_s);
+
+            margin-left: 0;
+
+
+            .item
+            {
+                & > a
+                {
+                    font-size: var(--font_size);
+                }
+            }
+        }
+
+
+        .email
+        {
+            font-size: var(--font_size);
+        }
+
+
+        .btns
+        {
+            gap: var(--inner_gap_xxs);
+
+            margin-right: 0;
+
+
+            .btn
+            {
+                min-width: 60px;
+                height: 60px;
+                padding-inline: var(--inner_gap_s);
+
+                font-size: var(--font_size);
+
+
+                &.discuss_btn
+                {
+                    min-width: 260px;
+                }
+            }
+        }
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        margin-bottom: var(--block_padding_l);
+        padding-top: var(--block_padding);
+
+
+        .cont
+        {
+            gap: var(--block_padding_l);
+        }
+    }
+
+
+
+    /*-----------------
+        Breadcrumbs
+    -----------------*/
+    .breadcrumbs
+    {
+        gap: var(--block_padding_s);
+
+
+        .sep
+        {
+            width: 12px;
+            height: 14px;
+        }
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form
+    {
+        --form_textarea_height: 72px;
+
+
+        .file
+        {
+            label
+            {
+                gap: var(--inner_gap_xxs);
+
+                font-size: var(--font_size_s);
+            }
+        }
+
+
+        .checkbox
+        {
+            font-size: var(--font_size_s);
+        }
+
+
+        .submit_btn
+        {
+            height: 52px;
+        }
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        &.s_w
+        {
+            width: 800px;
+        }
+
+
+        figure
+        {
+            figcaption
+            {
+                margin-top: var(--inner_gap);
+            }
+        }
+
+
+        ul,
+        ol
+        {
+            gap: var(--inner_gap);
+        }
+    }
+
+
+
+    /*-------------------
+        First section
+    -------------------*/
+    .first_section
+    {
+        margin-top: -126px;
+        padding-bottom: 0;
+
+
+        .data
+        {
+            min-height: 750px;
+            padding-block: 190px var(--block_padding);
+        }
+
+
+        .cont
+        {
+            gap: var(--outside_gap_xs);
+        }
+
+
+        .title
+        {
+            width: 600px;
+        }
+
+
+        .advantages
+        {
+            .grid_row
+            {
+                --gap_x: var(--block_padding_l);
+                --gap_y: var(--block_padding);
+            }
+
+
+            .item
+            {
+                gap: var(--inner_gap);
+
+
+                .name
+                {
+                    font-size: var(--font_size_title_xxs);
+
+
+                    .icon
+                    {
+                        width: 56px;
+                    }
+
+
+                    span
+                    {
+                        width: calc(100% - 56px - var(--inner_gap));
+                    }
+                }
+
+
+                .desc
+                {
+                    font-size: var(--font_size_s);
+                }
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Production
+    ----------------*/
+    .production
+    {
+        .block_head
+        {
+            width: 924px;
+            margin-bottom: -108px;
+        }
+    }
+
+
+
+    /*-------------
+        Catalog
+    -------------*/
+    .catalog
+    {
+        .list
+        {
+            gap: var(--inner_gap_l);
+        }
+
+
+        .category
+        {
+            min-height: 580px;
+            padding-block: var(--block_padding);
+            padding-inline: var(--block_padding);
+
+
+            .data
+            {
+                width: 624px;
+            }
+
+
+            .desc
+            {
+                width: calc(100% - 268px - var(--block_padding_l));
+
+                font-size: var(--font_size_l);
+            }
+
+
+            .advantages
+            {
+                width: 268px;
+
+                font-size: var(--font_size_s);
+            }
+
+
+            .items
+            {
+                gap: var(--inner_gap_xxs);
+
+                padding-top: var(--inner_gap_l);
+
+                font-size: var(--font_size_s);
+            }
+
+
+            .btns
+            {
+                gap: var(--inner_gap_xxs);
+
+
+                .btn
+                {
+                    min-width: 60px;
+                    height: 60px;
+                    padding-inline: var(--inner_gap_s);
+
+                    font-size: var(--font_size);
+
+
+                    &.details_btn
+                    {
+                        min-width: 360px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /*--------------------
+        Contacts block
+    --------------------*/
+    .contacts_block
+    {
+        .data
+        {
+            width: calc(50% - var(--inner_gap));
+            padding: var(--inner_gap_l);
+
+
+            .title
+            {
+                font-size: var(--font_size_title_xs);
+            }
+
+
+            .contacts
+            {
+                gap: var(--inner_gap);
+
+                margin-top: var(--block_padding);
+
+
+                .label
+                {
+                    font-size: var(--font_size_title_xs);
+                }
+
+
+                .items
+                {
+                    gap: var(--inner_gap_l);
+
+
+                    .sep
+                    {
+                        height: 20px;
+                    }
+                }
+            }
+
+
+            .messengers
+            {
+                gap: var(--inner_gap);
+
+                margin-top: var(--block_padding);
+
+
+                .items
+                {
+                    gap: var(--inner_gap_l);
+
+
+                    .sep
+                    {
+                        height: 20px;
+                    }
+                }
+            }
+
+
+            .btns
+            {
+                gap: var(--inner_gap_xxs);
+
+                margin-top: var(--block_padding);
+
+
+                .btn
+                {
+                    min-width: 60px;
+                    height: 60px;
+                    padding-inline: var(--inner_gap_s);
+
+                    font-size: var(--font_size);
+
+
+                    &.details_btn
+                    {
+                        width: calc(100% - 60px - var(--inner_gap_xxs));
+                    }
+                }
+            }
+        }
+
+
+        .list
+        {
+            gap: var(--inner_gap_l);
+
+            width: calc(50% - var(--inner_gap));
+
+
+            .item
+            {
+                min-height: 240px;
+                padding: var(--inner_gap_l);
+
+
+                .title
+                {
+                    font-size: var(--font_size_title_xs);
+                }
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info
+    {
+        .data
+        {
+            width: 1024px;
+        }
+
+
+        .map
+        {
+            height: 550px;
+            margin-top: var(--block_padding_l);
+        }
+
+
+        .legal_info
+        {
+            margin-top: var(--block_padding_l);
+
+
+            .items
+            {
+                width: 800px;
+            }
+
+
+            .desc
+            {
+                margin-top: var(--block_padding_l);
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Video present
+    -------------------*/
+    .video_present
+    {
+        video
+        {
+            height: 550px;
+        }
+    }
+
+
+
+    /*-------------
+        Anchors
+    -------------*/
+    .anchors
+    {
+        .title
+        {
+            margin-bottom: var(--inner_gap_l);
+        }
+
+
+        .items
+        {
+            gap: var(--inner_gap_xxxs);
+        }
+
+
+        .btn
+        {
+            padding: var(--inner_gap);
+
+            font-size: var(--font_size);
+        }
+    }
+
+
+
+    /*-------------------
+        Category head
+    -------------------*/
+    .category_head
+    {
+        margin-top: -126px;
+
+
+        .data
+        {
+            padding-block: 166px 100px;
+        }
+
+
+        .desc
+        {
+            width: 520px;
+
+            font-size: var(--font_size_l);
+        }
+
+
+        .text_block
+        {
+            margin-top: var(--block_padding);
+            padding-top: var(--block_padding);
+
+            font-size: var(--font_size);
+        }
+
+
+        .image
+        {
+            width: 900px;
+        }
+    }
+
+
+
+    /*----------------
+        Categories
+    ----------------*/
+    .categories
+    {
+        .category
+        {
+            .name
+            {
+                padding-block: var(--inner_gap);
+                padding-inline: var(--inner_gap_l);
+
+                font-size: 36px;
+            }
+
+
+            .info
+            {
+                gap: var(--inner_gap_l);
+
+                padding-block: var(--inner_gap_l);
+                padding-inline: var(--inner_gap_l);
+            }
+
+
+            .price
+            {
+                .exp
+                {
+                    margin-bottom: 2px;
+
+                    font-size: var(--font_size_s);
+                }
+
+                .val
+                {
+                    span
+                    {
+                        font-size: var(--font_size_title_xs);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    /*-----------------------
+        Tech. information
+    -----------------------*/
+    .tech_information
+    {
+        .text_block
+        {
+            table
+            {
+                margin-block: calc(var(--inner_gap_xs) * -1);
+
+                border-spacing: 0 var(--inner_gap_xs);
+            }
+        }
+    }
+
+
+
+    /*-------------------
+        Photo gallery
+    -------------------*/
+    .photo_gallery
+    {
+        &.projects
+        {
+            .swiper
+            {
+                &:not(.swiper-initialized)
+                {
+                    .swiper-slide
+                    {
+                        width: 1024px;
+                    }
+                }
+            }
+
+
+            .swiper-slide
+            {
+                width: 1024px;
+            }
+        }
+
+
+        .caption
+        {
+            width: 600px;
+            margin-top: var(--inner_gap);
+
+            font-size: var(--font_size);
+        }
+    }
+
+
+
+    /*---------------
+        Documents
+    ---------------*/
+    .documents
+    {
+        .file
+        {
+            gap: var(--inner_gap_l);
+        }
+    }
+
+
+
+    /*-----------------
+        How we work
+    -----------------*/
+    .how_we_work
+    {
+        .feedback
+        {
+            gap: var(--inner_gap_xl);
+
+            padding: var(--inner_gap_l);
+
+
+            .title
+            {
+                font-size: var(--font_size_title_xs);
+            }
+        }
+
+
+        .contacts_link
+        {
+            padding: var(--inner_gap_l);
+
+
+            .title
+            {
+                font-size: var(--font_size_title_xs);
+            }
+
+
+            .btn
+            {
+                font-size: var(--font_size);
+            }
+        }
+
+
+        .item
+        {
+            gap: var(--block_padding);
+
+            min-height: 540px;
+            padding: var(--inner_gap_l);
+
+
+            .title
+            {
+                font-size: var(--font_size_title_xs);
+            }
+
+
+            .items
+            {
+                gap: var(--inner_gap_xs);
+
+                width: calc(100% - 360px - var(--block_padding));
+            }
+
+
+            .desc
+            {
+                width: 360px;
+            }
+
+
+            .requisites
+            {
+                right: var(--inner_gap_l);
+                bottom: var(--inner_gap_l);
+
+                width: 360px;
+                max-width: calc(100% - var(--inner_gap_l) * 2);
+                min-height: 108px;
+                max-height: calc(100% - var(--inner_gap_l) * 2);
+
+
+                .btn
+                {
+                    font-size: var(--font_size_s);
+                }
+            }
+
+
+            .image1
+            {
+                left: 60px;
+
+                width: 500px;
+            }
+
+
+            .image2
+            {
+                width: 480px;
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Logos
+    -----------*/
+    .logos
+    {
+        .image
+        {
+            height: 200px;
+        }
+
+
+        .btn
+        {
+            gap: var(--inner_gap_l);
+
+            margin-top: var(--inner_gap_xl);
+
+            font-size: var(--font_size_l);
+        }
+    }
+
+
+
+    /*----------------
+        About head
+    ----------------*/
+    .about_head
+    {
+        margin-top: -126px;
+
+
+        &:before
+        {
+            bottom: -516px;
+        }
+
+
+        .data
+        {
+            padding-block: 166px var(--outside_gap_xs);
+
+
+            .cont
+            {
+                min-height: 550px;
+            }
+        }
+
+
+        .title
+        {
+            width: 700px;
+
+            font-size: calc(var(--font_size_title) - 4px);
+        }
+
+
+        .image
+        {
+            width: 760px;
+        }
+
+
+        .desc
+        {
+            width: 1000px;
+            padding-block: var(--outside_gap_xs);
+            padding-inline: 0 var(--outside_gap_xs);
+
+            font-size: var(--font_size_title_xs);
+
+
+            &:before
+            {
+                width: calc(100% + var(--block_padding));
+                height: calc(100% + 32px);
+            }
+        }
+
+
+        .bg
+        {
+            right: var(--cont_padding);
+            bottom: -88px;
+
+            margin-right: 0;
+
+
+            img
+            {
+                width: 880px;
+                height: 986px;
+            }
+        }
+    }
+
+
+
+    /*-----------
+        Stats
+    -----------*/
+    .stats
+    {
+        &.top_pad
+        {
+            padding-top: 60px;
+        }
+
+
+        .grid_row
+        {
+            --gap_x: var(--block_padding);
+        }
+
+
+        .item
+        {
+            min-height: 280px;
+
+
+            .val
+            {
+                font-size: 100px;
+            }
+
+
+            .desc
+            {
+                width: 200px;
+
+                font-size: var(--font_size);
+            }
+        }
+    }
+
+
+
+    /*----------------
+        Boss quote
+    ----------------*/
+    .boss_quote
+    {
+        .data
+        {
+            gap: var(--block_padding);
+
+            width: 700px;
+            margin-left: var(--block_padding);
+
+
+            .text
+            {
+                font-size: var(--font_size_title_s);
+            }
+
+
+            .author
+            {
+                gap: var(--inner_gap_xxs);
+
+
+                .icon
+                {
+                    width: 60px;
+                }
+
+
+                .name
+                {
+                    font-size: var(--font_size_title_xs);
+                }
+
+
+                .post
+                {
+                    font-size: var(--font_size);
+                }
+            }
+        }
+
+
+        .image
+        {
+            width: 560px;
+        }
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        .email
+        {
+            font-size: 120px;
+        }
+
+
+        .bottom
+        {
+            padding-block: var(--inner_gap_l) ;
+        }
+
+
+        .data
+        {
+            .title
+            {
+                margin-bottom: var(--inner_gap_l);
+            }
+        }
+
+
+        .logo
+        {
+            gap: var(--inner_gap_l);
+
+
+            img
+            {
+                width: 276px;
+                height: 60px;
+            }
+        }
+
+
+        .links
+        {
+            .items
+            {
+                &.big
+                {
+                    font-size: var(--font_size_l);
+                }
+            }
+        }
+    }
+}
