@@ -116,26 +116,24 @@
         }
 
 
-        .btns
+        .btn
         {
             gap: var(--inner_gap_xxs);
 
             margin-right: 0;
 
+            font-size: var(--font_size);
 
-            .btn
+
+            span:not(.icon)
             {
-                min-width: 60px;
-                height: 60px;
-                padding-inline: var(--inner_gap_s);
-
-                font-size: var(--font_size);
+                min-width: 260px;
+            }
 
 
-                &.discuss_btn
-                {
-                    min-width: 260px;
-                }
+            .icon
+            {
+                width: 60px;
             }
         }
     }
@@ -372,24 +370,22 @@
             }
 
 
-            .btns
+            .btn
             {
                 gap: var(--inner_gap_xxs);
 
+                font-size: var(--font_size);
 
-                .btn
+
+                span:not(.icon)
                 {
-                    min-width: 60px;
-                    height: 60px;
-                    padding-inline: var(--inner_gap_s);
-
-                    font-size: var(--font_size);
+                    min-width: 360px;
+                }
 
 
-                    &.details_btn
-                    {
-                        min-width: 360px;
-                    }
+                .icon
+                {
+                    width: 60px;
                 }
             }
         }
@@ -460,26 +456,24 @@
             }
 
 
-            .btns
+            .btn
             {
                 gap: var(--inner_gap_xxs);
 
                 margin-top: var(--block_padding);
 
+                font-size: var(--font_size);
 
-                .btn
+
+                span:not(.icon)
                 {
-                    min-width: 60px;
-                    height: 60px;
-                    padding-inline: var(--inner_gap_s);
-
-                    font-size: var(--font_size);
+                    width: calc(100% - 60px - var(--inner_gap_xxs));
+                }
 
 
-                    &.details_btn
-                    {
-                        width: calc(100% - 60px - var(--inner_gap_xxs));
-                    }
+                .icon
+                {
+                    width: 60px;
                 }
             }
         }

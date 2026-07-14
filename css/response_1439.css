@@ -38,18 +38,17 @@
         }
 
 
-        .btns
+        .btn
         {
-            .btn
+            span:not(.icon)
             {
-                min-width: 56px;
-                height: 56px;
+                min-width: 224px;
+            }
 
 
-                &.discuss_btn
-                {
-                    min-width: 224px;
-                }
+            .icon
+            {
+                width: 56px;
             }
         }
     }
@@ -259,22 +258,20 @@
             }
 
 
-            .btns
+            .btn
             {
                 gap: var(--inner_gap_xxs);
 
 
-                .btn
+                span:not(.icon)
                 {
-                    min-width: 56px;
-                    height: 56px;
-                    padding-inline: var(--inner_gap_xs);
+                    min-width: 320px;
+                }
 
 
-                    &.details_btn
-                    {
-                        min-width: 320px;
-                    }
+                .icon
+                {
+                    width: 56px;
                 }
             }
         }
@@ -292,19 +289,17 @@
             width: calc(50% - var(--cont_padding_half));
 
 
-            .btns
+            .btn
             {
-                .btn
+                span:not(.icon)
                 {
-                    min-width: 56px;
-                    height: 56px;
-                    padding-inline: var(--inner_gap_xs);
+                    width: calc(100% - 56px - var(--inner_gap_xxs));
+                }
 
 
-                    &.details_btn
-                    {
-                        width: calc(100% - 56px - var(--inner_gap_xxs));
-                    }
+                .icon
+                {
+                    width: 56px;
                 }
             }
         }

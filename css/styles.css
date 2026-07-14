@@ -576,19 +576,26 @@ header
     }
 
 
-    .btns
+    .btn
     {
         display: flex;
-        align-content: center;
-        align-items: center;
+        align-content: stretch;
+        align-items: stretch;
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 10px;
 
         margin-right: -26px;
 
+        font-size: var(--font_size_l);
+        line-height: 130%;
 
-        .btn
+        transition: background .2s linear;
+
+        border-radius: var(--border_radius_max);
+
+
+        span:not(.icon)
         {
             display: flex;
             align-content: center;
@@ -596,53 +603,35 @@ header
             flex-wrap: wrap;
             justify-content: center;
 
-            min-width: 64px;
-            height: 64px;
+            min-width: 293px;
             padding-inline: var(--inner_gap);
 
-            font-size: var(--font_size_l);
-            line-height: 130%;
-
-            transition: .2s linear;
+            transition: border-color .2s linear;
 
             border: 1px solid var(--light_color);
             border-radius: var(--border_radius_max);
+        }
 
 
-            &.discuss_btn
-            {
-                min-width: 293px;
-            }
+        .icon
+        {
+            display: flex;
+            align-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            width: 64px;
+
+            transition: border-color .2s linear;
+
+            border: 1px solid var(--light_color);
+            border-radius: 50%;
+
+            aspect-ratio: 1 / 1;
 
 
-            &.mob_menu_btn
-            {
-                display: none;
-
-
-                .icon
-                {
-                    width: 24px;
-                }
-
-
-                &.active
-                {
-                    .icon
-                    {
-                        display: none;
-                    }
-
-
-                    .icon + .icon
-                    {
-                        display: block;
-                    }
-                }
-            }
-
-
-            .icon
+            svg
             {
                 display: block;
 
@@ -650,21 +639,68 @@ header
 
                 aspect-ratio: 1 / 1;
             }
+        }
 
 
-            .icon + .icon
+        @media (hover: hover) and (pointer: fine)
+        {
+            &:hover
+            {
+                background: var(--primary_color);
+
+
+                span
+                {
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+
+
+    .mob_menu_btn
+    {
+        display: none;
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 52px;
+
+        border: 1px solid var(--light_color);
+        border-radius: 50%;
+
+        aspect-ratio: 1 / 1;
+
+
+        .icon
+        {
+            display: block;
+
+            width: 24px;
+
+            aspect-ratio: 1 / 1;
+        }
+
+
+        .icon + .icon
+        {
+            display: none;
+        }
+
+
+        &.active
+        {
+            .icon
             {
                 display: none;
             }
 
 
-            @media (hover: hover) and (pointer: fine)
+            .icon + .icon
             {
-                &:hover
-                {
-                    border-color: var(--primary_color);
-                    background: var(--primary_color);
-                }
+                display: block;
             }
         }
     }
@@ -2274,7 +2310,8 @@ aside
 
     .category
     {
-        position: relative;
+        position: sticky;
+        top: 0;
 
         display: flex;
         overflow: hidden;
@@ -2407,19 +2444,29 @@ aside
         }
 
 
-        .btns
+        .btn
         {
             display: flex;
-            align-content: center;
-            align-items: center;
+            align-content: stretch;
+            align-items: stretch;
             flex-wrap: wrap;
             justify-content: flex-start;
             gap: 10px;
 
+            width: fit-content;
             margin-top: auto;
 
+            font-weight: 500;
+            line-height: 140%;
 
-            .btn
+            transition: background .2s linear;
+            text-decoration: none;
+
+            color: var(--light_color);
+            border-radius: var(--border_radius_max);
+
+
+            span:not(.icon)
             {
                 display: flex;
                 align-content: center;
@@ -2427,28 +2474,35 @@ aside
                 flex-wrap: wrap;
                 justify-content: center;
 
-                min-width: 68px;
-                height: 68px;
+                min-width: 410px;
                 padding-inline: var(--inner_gap);
 
-                font-weight: 500;
-                line-height: 140%;
-
                 transition: background .2s linear;
-                text-decoration: none;
 
-                color: var(--light_color);
                 border-radius: var(--border_radius_max);
                 background: var(--primary_color);
+            }
 
 
-                &.details_btn
-                {
-                    min-width: 410px;
-                }
+            .icon
+            {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                width: 68px;
+
+                transition: background .2s linear;
+
+                border-radius: 50%;
+                background: var(--primary_color);
+
+                aspect-ratio: 1 / 1;
 
 
-                .icon
+                svg
                 {
                     display: block;
 
@@ -2456,13 +2510,19 @@ aside
 
                     aspect-ratio: 1 / 1;
                 }
+            }
 
 
-                @media (hover: hover) and (pointer: fine)
+            @media (hover: hover) and (pointer: fine)
+            {
+                &:hover
                 {
-                    &:hover
+                    background: var(--dark_color);
+
+
+                    span
                     {
-                        background: var(--dark_color);
+                        background: transparent;
                     }
                 }
             }
@@ -2687,19 +2747,29 @@ aside
         }
 
 
-        .btns
+        .btn
         {
             display: flex;
-            align-content: center;
-            align-items: center;
+            align-content: stretch;
+            align-items: stretch;
             flex-wrap: wrap;
             justify-content: flex-start;
             gap: 10px;
 
+            width: 100%;
             margin-top: 55px;
 
+            font-weight: 500;
+            line-height: 140%;
 
-            .btn
+            transition: background .2s linear;
+            text-decoration: none;
+
+            color: var(--light_color);
+            border-radius: var(--border_radius_max);
+
+
+            span:not(.icon)
             {
                 display: flex;
                 align-content: center;
@@ -2707,28 +2777,34 @@ aside
                 flex-wrap: wrap;
                 justify-content: center;
 
-                min-width: 68px;
-                height: 68px;
+                width: calc(100% - 68px - 10px);
                 padding-inline: var(--inner_gap);
 
-                font-weight: 500;
-                line-height: 140%;
+                transition: background .2s linear;
+
+                border-radius: var(--border_radius_max);
+                background: var(--primary_color);
+            }
+
+            .icon
+            {
+                display: flex;
+                align-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: center;
+
+                width: 68px;
 
                 transition: background .2s linear;
-                text-decoration: none;
 
-                color: var(--light_color);
                 border-radius: var(--border_radius_max);
                 background: var(--primary_color);
 
-
-                &.details_btn
-                {
-                    width: calc(100% - 68px - 10px);
-                }
+                aspect-ratio: 1 / 1;
 
 
-                .icon
+                svg
                 {
                     display: block;
 
@@ -2736,13 +2812,19 @@ aside
 
                     aspect-ratio: 1 / 1;
                 }
+            }
 
 
-                @media (hover: hover) and (pointer: fine)
+            @media (hover: hover) and (pointer: fine)
+            {
+                &:hover
                 {
-                    &:hover
+                    background: var(--dark_color);
+
+
+                    span
                     {
-                        background: var(--dark_color);
+                        background: transparent;
                     }
                 }
             }
@@ -3150,12 +3232,26 @@ aside
             font-weight: 600;
             line-height: 135%;
 
+            transition: color .2s linear;
+
             text-decoration-line: underline;
             text-decoration-style: solid;
             text-decoration-skip-ink: auto;
             text-decoration-thickness: 8.5%;
             text-underline-offset: 0;
             text-underline-position: from-font;
+        }
+
+
+        @media (hover: hover) and (pointer: fine)
+        {
+            &:hover
+            {
+                .btn
+                {
+                    color: var(--primary_color);
+                }
+            }
         }
     }
 
@@ -3256,12 +3352,26 @@ aside
                 font-weight: 600;
                 line-height: 135%;
 
+                transition: color .2s linear;
+
                 text-decoration-line: underline;
                 text-decoration-style: solid;
                 text-decoration-skip-ink: auto;
                 text-decoration-thickness: 8.5%;
                 text-underline-offset: 0;
                 text-underline-position: from-font;
+            }
+
+
+            @media (hover: hover) and (pointer: fine)
+            {
+                &:hover
+                {
+                    .btn
+                    {
+                        color: var(--primary_color);
+                    }
+                }
             }
         }
 
@@ -4830,7 +4940,7 @@ footer
 
             text-decoration: none;
 
-            color: currentColor;
+            color: rgba(0, 0, 0, .70);
             border-radius: 4px;
             background: rgba(0, 0, 0, .12);
 
@@ -4839,7 +4949,7 @@ footer
             {
                 margin-left: 2px;
 
-                color: var(--light_color);
+                color: var(--dark_color);
             }
 
 

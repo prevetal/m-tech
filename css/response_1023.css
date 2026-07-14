@@ -21,14 +21,9 @@
     ------------*/
     header
     {
-        .btns
+        .mob_menu_btn
         {
-            .btn
-            {
-                min-width: 48px;
-                height: 48px;
-                padding-inline: var(--inner_gap_xxs);
-            }
+            width: 48px;
         }
     }
 
@@ -171,19 +166,17 @@
             }
 
 
-            .btns
+            .btn
             {
-                .btn
+                span:not(.icon)
                 {
-                    min-width: 48px;
-                    height: 48px;
-                    padding-inline: var(--inner_gap_xxs);
+                    min-width: 280px;
+                }
 
 
-                    &.details_btn
-                    {
-                        min-width: 280px;
-                    }
+                .icon
+                {
+                    width: 48px;
                 }
             }
 
@@ -210,18 +203,17 @@
             margin-bottom: var(--inner_gap_l);
 
 
-            .btns
+            .btn
             {
-                .btn
+                span:not(.icon)
                 {
-                    min-width: 48px;
-                    height: 48px;
+                    width: calc(100% - 48px - var(--inner_gap_xxs));
+                }
 
 
-                    &.details_btn
-                    {
-                        width: calc(100% - 48px - var(--inner_gap_xxs));
-                    }
+                .icon
+                {
+                    width: 48px;
                 }
             }
         }
