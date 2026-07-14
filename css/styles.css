@@ -743,12 +743,9 @@ header
         display: flex;
 
         opacity: 1;
-    }
 
 
-    @starting-style
-    {
-        &.show
+        @starting-style
         {
             opacity: 0;
         }
@@ -1719,15 +1716,12 @@ aside
                 display: block;
 
                 opacity: 1;
-            }
-        }
 
 
-        @starting-style
-        {
-            .text
-            {
-                opacity: 0;
+                @starting-style
+                {
+                    opacity: 0;
+                }
             }
         }
     }
@@ -2127,12 +2121,12 @@ aside
                 display: flex;
 
                 opacity: 1;
-            }
 
 
-            @starting-style
-            {
-                opacity: 0;
+                @starting-style
+                {
+                    opacity: 0;
+                }
             }
         }
     }
@@ -5108,12 +5102,9 @@ footer
     &[open]
     {
         opacity: 1;
-    }
 
 
-    @starting-style
-    {
-        &[open]
+        @starting-style
         {
             opacity: 0;
         }
