@@ -539,6 +539,109 @@ header
             {
                 color: var(--light_color_soft);
             }
+
+
+            @media (hover: hover) and (pointer: fine)
+            {
+                &:hover
+                {
+                    .sub
+                    {
+                        display: flex;
+
+                        opacity: 1;
+
+
+                        @starting-style
+                        {
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .sub
+        {
+            position: absolute;
+            top: 100%;
+            left: 0;
+
+            display: none;
+            flex-direction: column;
+            gap: var(--inner_gap_s);
+
+            width: 247px;
+            min-width: 100%;
+            margin-top: var(--inner_gap_s);
+            padding: var(--block_padding_s);
+
+            z-index: 5;
+            transition: opacity .2s linear, display .2s allow-discrete;
+
+            opacity: 0;
+            border-radius: 6px;
+            background: var(--bg_grey);
+
+
+            &:before
+            {
+                position: absolute;
+                bottom: 100%;
+                left: 0;
+
+                display: block;
+
+                width: 100%;
+                height: var(--inner_gap_s);
+
+                content: '';
+            }
+
+
+            a
+            {
+                display: block;
+
+                font-size: var(--font_size_l);
+                font-weight: 500;
+                line-height: 135%;
+
+                transition: color .2s linear;
+                text-decoration: none;
+
+                color: var(--dark_color);
+
+
+                @media (hover: hover) and (pointer: fine)
+                {
+                    &:hover
+                    {
+                        color: var(--primary_color);
+                    }
+                }
+
+
+                &.active
+                {
+                    color: var(--primary_color);
+                }
+            }
+
+
+            &.show
+            {
+                display: flex;
+
+                opacity: 1;
+
+
+                @starting-style
+                {
+                    opacity: 0;
+                }
+            }
         }
     }
 
